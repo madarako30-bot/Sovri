@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទំព័រ Booking</title>
+    <style>
+        /* នេះជាកូដ CSS របស់អ្នក */
+        body {
+            font-family: 'Khmer OS', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #FF4500;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #FF4500;
+            font-size: 36px;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .header .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .logo-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF4500;
+        }
+        .game-selector {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .game-radio {
+            background: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .game-radio input {
+            margin-right: 5px;
+        }
+        .package-section {
+            background: #fff3e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .package-section h2 {
+            color: #FF4500;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .package-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ffe0b2;
+            text-align: center;
+        }
+        .book-btn {
+            background: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>BOOKING CENTER</h1>
+        <div class="subtitle">សូមជ្រើសរើសសេវាកម្ម និងកញ្ចប់ដែលអ្នកពេញចិត្ត</div>
+    </div>
+
+    <div class="logo-section">
+        <div class="logo">MyBrand</div>
+        <div>ទូរស័ព្ទ៖ 012 345 678</div>
+    </div>
+
+    <h3>១. ជ្រើសរើសសេវាកម្ម</h3>
+    <div class="game-selector">
+        <label class="game-radio">
+            <input type="radio" name="game" checked> ហ្គេមទូរស័ព្ទ (Mobile)
+        </label>
+        <label class="game-radio">
+            <input type="radio" name="game"> ហ្គេមកុំព្យូទ័រ (PC)
+        </label>
+    </div>
+
+    <h3>២. ជ្រើសរើសកញ្ចប់</h3>
+    <div class="package-section">
+        <h2>កញ្ចប់ពេញនិយម (Popular Packages)</h2>
+        <div class="package-grid">
+            <div class="package-item">
+                <h4>កញ្ចប់លក្ខណៈបុគ្គល</h4>
+                <p>តម្លៃ: $5 / ម៉ោង</p>
+                <button class="book-btn">កក់ឥឡូវនេះ</button>
+            </div>
+            <div class="package-item">
+                <h4>កញ្ចប់លក្ខណៈក្រុម</h4>
+                <p>តម្លៃ: $20 / ម៉ោង</p>
+                <button class="book-btn">កក់ឥឡូវនេះ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទំព័រ Booking</title>
+    <style>
+        /* នេះជាកូដ CSS របស់អ្នក */
+        body {
+            font-family: 'Khmer OS', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #FF4500;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #FF4500;
+            font-size: 36px;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .header .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .logo-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF4500;
+        }
+        .game-selector {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .game-radio {
+            background: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .game-radio input {
+            margin-right: 5px;
+        }
+        .package-section {
+            background: #fff3e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .package-section h2 {
+            color: #FF4500;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .package-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ffe0b2;
+            text-align: center;
+        }
+        .book-btn {
+            background: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>BOOKING CENTER</h1>
+        <div class="subtitle">សូមជ្រើសរើសសេវាកម្ម និងកញ្ចប់ដែលអ្នកពេញចិត្ត</div>
+    </div>
+
+    <div class="logo-section">
+        <div class="logo">MyBrand</div>
+        <div>ទូរស័ព្ទ៖ 012 345 678</div>
+    </div>
+
+    <h3>១. ជ្រើសរើសសេវាកម្ម</h3>
+    <div class="game-selector">
+        <label class="game-radio">
+            <input type="radio" name="game" checked> ហ្គេមទូរស័ព្ទ (Mobile)
+        </label>
+        <label class="game-radio">
+            <input type="radio" name="game"> ហ្គេមកុំព្យូទ័រ (PC)
+        </label>
+    </div>
+
+    <h3>២. ជ្រើសរើសកញ្ចប់</h3>
+    <div class="package-section">
+        <h2>កញ្ចប់ពេញនិយម (Popular Packages)</h2>
+        <div class="package-grid">
+            <div class="package-item">
+                <h4>កញ្ចប់លក្ខណៈបុគ្គល</h4>
+                <p>តម្លៃ: $5 / ម៉ោង</p>
+                <button class="book-btn">កក់ឥឡូវនេះ</button>
+            </div>
+            <div class="package-item">
+                <h4>កញ្ចប់លក្ខណៈក្រុម</h4>
+                <p>តម្លៃ: $20 / ម៉ោង</p>
+                <button class="book-btn">កក់ឥឡូវនេះ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
